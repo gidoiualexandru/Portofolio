@@ -80,47 +80,48 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "PHP",
-      icon: php,
-    },
-    {
-      name: "Laravel",
-      icon: laravel,
-    },
-    {
-      name: "Vue JS",
-      icon: vuejs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
+  //   {
+  //     name: "PHP",
+  //     icon: php,
+  //   },
+  //   {
+  //     name: "Laravel",
+  //     icon: laravel,
+  //   },
+  //   {
+  //     name: "Vue JS",
+  //     icon: vuejs,
+  //   },
+  //   {
+  //     name: "Tailwind CSS",
+  //     icon: tailwind,
+  //   },
+  //   {
+  //     name: "Node JS",
+  //     icon: nodejs,
+  //   },
+  //   {
+  //     name: "MongoDB",
+  //     icon: mongodb,
+  //   },
+  //   {
+  //     name: "Three JS",
+  //     icon: threejs,
+  //   },
+  //   {
+  //     name: "git",
+  //     icon: git,
+  //   },
+  //   {
+  //     name: "figma",
+  //     icon: figma,
+  //   },
+  //   {
+  //     name: "docker",
+  //     icon: docker,
+  //   },
+  // 
+];
   
   const experiences = [
     {
