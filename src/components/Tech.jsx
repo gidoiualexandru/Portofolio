@@ -1,27 +1,53 @@
 import React from "react";
-import { textVariant } from "../utils/motion";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import {motion} from 'framer-motion'
-import { styles } from "../style";
+
+const shuffleArray = (array) => {
+  let shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+};
 
 const Tech = () => {
+  const isMobile = window.matchMedia("(max-width: 500px)").matches;
+
+  const shuffledTechnologies = shuffleArray(technologies);
+
+  const Map = (isMobile, technologies) => {
+    if (isMobile) {
+      return technologies.slice(0, 4).map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+          <p className="flex justify-center text-white font-bold">
+            {technology.name}
+          </p>
+        </div>
+      ));
+    } else {
+      return technologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+          <p className="flex justify-center text-white font-bold">
+            {technology.name}
+          </p>
+        </div>
+      ));
+    }
+  };
+
   return (
-    <><motion.div variants={textVariant()}>
-      <p className={`${styles.sectionSubText} text-center`}>
-        Technologies I worked with in the past
-      </p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>
-        Technologies.
-      </h2>
-    </motion.div><div className='flex flex-row flex-wrap justify-center mt-20 gap-10'>
-        {technologies.map((technology) => (
-          <div className='w-28 h-28' key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </div>
-        ))}
-      </div></>
+    <>
+      <h1 className="font-bold flex justify-center text-lg mb-5 text-[#915EFF]">
+        My Tech Stack
+      </h1>
+      <div className="flex flex-row flex-wrap justify-center gap-10">
+        {Map(isMobile, shuffledTechnologies)}
+      </div>
+    </>
   );
 };
 

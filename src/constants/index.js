@@ -23,6 +23,13 @@ import {
     vuejs,
     pfg,
     magic,
+    udemy,
+    twh,
+    social,
+    marketplace,
+    aws,
+    go,
+    next,
   } from "../assets";
   
   export const navLinks = [
@@ -42,11 +49,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Fullstack Developer",
+      icon: creator,
     },
     {
-      title: "React Native Developer",
+      title: "DevOps Engineer",
       icon: mobile,
     },
     {
@@ -54,8 +61,8 @@ import {
       icon: backend,
     },
     {
-      title: "Fullstack Developer",
-      icon: creator,
+      title: "Web Developer",
+      icon: web,
     },
   ];
   
@@ -80,56 +87,81 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-  //   {
-  //     name: "PHP",
-  //     icon: php,
-  //   },
-  //   {
-  //     name: "Laravel",
-  //     icon: laravel,
-  //   },
-  //   {
-  //     name: "Vue JS",
-  //     icon: vuejs,
-  //   },
-  //   {
-  //     name: "Tailwind CSS",
-  //     icon: tailwind,
-  //   },
-  //   {
-  //     name: "Node JS",
-  //     icon: nodejs,
-  //   },
-  //   {
-  //     name: "MongoDB",
-  //     icon: mongodb,
-  //   },
-  //   {
-  //     name: "Three JS",
-  //     icon: threejs,
-  //   },
-  //   {
-  //     name: "git",
-  //     icon: git,
-  //   },
-  //   {
-  //     name: "figma",
-  //     icon: figma,
-  //   },
-  //   {
-  //     name: "docker",
-  //     icon: docker,
-  //   },
-  // 
+    {
+      name: "PHP",
+      icon: php,
+    },
+    {
+      name: "Laravel",
+      icon: laravel,
+    },
+    {
+      name: "Vue JS",
+      icon: vuejs,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
+    {
+      name: "Git",
+      icon: git,
+    },
+    {
+      name: "Figma",
+      icon: figma,
+    },
+    {
+      name: "Docker",
+      icon: docker,
+    },
+    {
+      name: "AWS",
+      icon: aws,
+    },
+    {
+      name: "Golang",
+      icon: go,
+    },
+    {
+      name: "Next.js",
+      icon: next,
+    },
 ];
   
   const experiences = [
+    {
+      title: "Chief Technology Officer (Volunteer)",
+      company_name: "Grupul TWH",
+      icon: twh,
+      iconBg: "#ffffff",
+      date: "November 2024 - Present",
+      points: [
+        "Leading the development and implementation of strategic tech initiatives to drive innovation and operational efficiency.",
+        "Collaborating with a dedicated team to align technology with the company's mission.",
+        "Ensuring the delivery of secure, scalable, and impactful solutions.",
+        "Representing the IT department in key meetings.",
+        "Overseeing the creation of infrastructure for technical projects.",
+      ],
+    },
     {
       title: "Fullstack Developer",
       company_name: "Publicity for Good",
       icon: pfg,
       iconBg: "#ffffff",
-      date: "January 2024 - April 2024",
+      date: "February 2024 - Present",
       points: [
         "Developing and maintaining web applications using Vue.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,7 +174,7 @@ import {
       company_name: "Magic Romania",
       icon: magic,
       iconBg: "#000000",
-      date: "April 2024 - Present",
+      date: "November 2023 - February 2024",
       points: [
         "Developing and maintaining web applications using PHP, Laravel and other related technologies.",
         "Playing key factor in cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -150,32 +182,17 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-  ];
-  
-  const testimonials = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      title: "Fullstack Developer",
+      company_name: "Udemy",
+      icon: udemy,
+      iconBg: "#ffffff",
+      date: "September 2022 - November 2023",
+      points: [
+        "Mastered HTML, CSS, JavaScript, React, Node.js, Bootstrap, and MongoDB.",
+        "Gained practical experience in API integrations.",
+        "Developed full stack applications.",
+      ],
     },
   ];
   
@@ -200,6 +217,48 @@ import {
       ],
       image: aichat,
       source_code_link: "https://github.com/gidoiualexandru/AI_Chatbot",
+    },
+    {
+      name: "Django Marketplace",
+      description:
+        "Marketplace app created using Django and Python. It has Admin dashboard, Authentification CRUD for products.",
+      tags: [
+        {
+          name: "Django",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: marketplace,
+      source_code_link: "https://github.com/gidoiualexandru/DjangoMarketplace",
+    },
+    {
+      name: "Django Social Media",
+      description:
+        "Social media platform created using Django, Python and TailwindCSS.",
+      tags: [
+        {
+          name: "Django",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: social,
+      source_code_link: "https://github.com/gidoiualexandru/DjangoMarketplace",
     },
     {
       name: "Crypto Tracker",
@@ -245,4 +304,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

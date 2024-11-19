@@ -28,6 +28,13 @@ import magic from "./company/magic.png";
 import trello from './trello.jpeg'
 import crypto from './crypto.jpeg'
 import carrent from "./carrent.png";
+import udemy from './company/udemy.jpeg'
+import twh from './company/twh.jpeg'
+import social from './djangosocialmedia.png'
+import marketplace from './marketplace.png'
+import aws from './tech/aws.png'
+import go from './tech/go.png'
+import next from './tech/next.png'
 
 export {
   php,
@@ -60,4 +67,11 @@ export {
   carrent,
   trello,
   crypto,
+  udemy,
+  twh,
+  social,
+  marketplace,
+  aws,
+  go,
+  next,
 };
